@@ -1,0 +1,21 @@
+12/13/2022
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+
+
+12/15/2022
+
+https://splinter.readthedocs.io/en/latest/why.html
+easier way to initiate automated browser session vs what we have in Module 11, worked for me
+from bs4 import BeautifulSoup as soup
+from splinter import Browser
+browser = Browser('chrome', incognito=True, headless=False)
+browser.visit('https://galaxyfacts-mars.com/')
+html = browser.html
+html_soup = soup(html, 'html.parser')
+(edited)
+
+https://splinter.readthedocs.io/en/latest/finding.html
+
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/#attributes
